@@ -7,6 +7,14 @@
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+
+	// Icons
+	import IconLayers from "~icons/lucide/layers";
+	import IconHeart from "~icons/lucide/heart";
+	import IconBattery from "~icons/lucide/battery";
+	import IconClock from "~icons/lucide/clock";
+	import IconFlask from "~icons/lucide/flask";
+	import IconLeaf from "~icons/lucide/leaf";
 </script>
 
 <Hero
@@ -26,60 +34,74 @@
 />
 
 <Summary
-	generating
-	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	title="Backed by science. Built for daily life"
+	text="We help busy, health-conscious professionals take charge of their gut health through a clinically studied, triple-fiber supplement that fits easily into daily life. Designed to feed beneficial bacteria, reduce bloating, and restore energy—our formula delivers digestive balance without the guesswork.
+
+95% of Americans fall short of daily fiber intake, leading to digestive issues that affect energy and well-being. Our precise blend of three targeted fiber types fills that gap in one simple scoop, so you can feel your best every day."
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
+			name: "Maya Chen",
+			position: "Marketing Director",
+			company: "BrandForward",
 			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"After years of afternoon energy crashes and digestive issues, this fiber blend changed everything. I save 2 hours weekly that I used to spend managing bloating and discomfort—now I can focus on what matters most.",
+			image: "/generated/image-professional-headshot-of-a-confident-asi.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Marcus Williams",
+			position: "Healthcare Consultant",
+			company: "Wellness Partners",
 			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"As someone who advises clients on gut health, I was skeptical of supplements. But this tri-blend approach eliminated my irregular digestion within 3 weeks, saving me hundreds in specialist consultations I was considering.",
+			image: "/generated/image-professional-headshot-of-a-confident-bla.webp"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
+			name: "Carmen Rodriguez",
+			position: "Operations Manager",
+			company: "TechFlow Solutions",
 			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"Between managing a team and family, I had no time for complex wellness routines. This simple daily supplement reduced my bloating by 80% and gave me consistent energy—worth every penny of the meal prep services I used to rely on.",
+			image: "/generated/image-professional-headshot-of-a-confident-his.webp"
 		}
 	]}
 />
 
 <Features
-	generating
-	title="Features"
-	subtitle="Some features"
+	title="Why our fiber works differently"
+	subtitle="Three targeted fiber types that transform gut health from the inside out, addressing the root causes other supplements miss."
 	features={[
 		{
-			title: "Streamlined Workflows",
-			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+			title: "Triple-action fiber blend",
+			description: "Unlike single-fiber supplements, our scientifically-formulated tri-blend feeds diverse beneficial bacteria while regulating digestion naturally. Experience comprehensive gut transformation that goes beyond basic regularity.",
+			icon: IconLayers
 		},
 		{
-			title: "Data Analysis",
-			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+			title: "Reduces bloating within days",
+			description: "Targeted prebiotic fibers restore optimal gut flora balance, eliminating uncomfortable bloating and digestive distress. Feel lighter and more energized as your gut finds its natural rhythm.",
+			icon: IconHeart
 		},
 		{
-			title: "Secure Collaboration",
-			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+			title: "Sustained energy throughout your day",
+			description: "Balanced fiber absorption stabilizes blood sugar and supports consistent energy levels. No more afternoon crashes—just steady vitality that powers your demanding lifestyle.",
+			icon: IconBattery
+		},
+		{
+			title: "Convenient daily ritual",
+			description: "One simple scoop seamlessly integrates into your morning routine, delivering professional-grade gut health benefits. Transform your wellness without disrupting your busy schedule.",
+			icon: IconClock
+		},
+		{
+			title: "Clinically-backed formulation",
+			description: "Each fiber type is precisely dosed based on published gut microbiome research, ensuring maximum effectiveness. Experience the confidence of science-driven nutrition that delivers measurable results.",
+			icon: IconFlask
+		},
+		{
+			title: "Gentle yet powerful results",
+			description: "Our premium fiber blend works harmoniously with your digestive system, avoiding harsh effects common in traditional supplements. Achieve optimal gut health through gentle, sustainable transformation.",
+			icon: IconLeaf
 		}
 	]}
 />
