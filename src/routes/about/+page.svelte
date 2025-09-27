@@ -11,16 +11,16 @@
 	// Constants
 	const values = [
 		{
-			title: "Innovation",
-			description: "Constantly challenging the status quo to create better solutions."
+			title: "Science-driven",
+			description: "Every formula is backed by clinical research, not trends or gimmicks. We combine proven fiber types that work together for real digestive results."
 		},
 		{
-			title: "Integrity",
-			description: "Building trust through transparent actions and honest communication."
+			title: "Everyday simplicity",
+			description: "Gut health shouldn't be complicated. We create solutions that fit seamlessly into real life, making wellness accessible for busy schedules."
 		},
 		{
-			title: "Impact",
-			description: "Measuring our success by the positive change we create for our clients."
+			title: "Genuine care",
+			description: "Your wellbeing is our mission. We're here to support your journey to feeling lighter, more energized, and confidently in control of your health."
 		}
 	];
 </script>
@@ -41,11 +41,10 @@
 />
 
 <!-- Our Culture Section -->
-<Culture {values} generating />
+<Culture {values} />
 
 <!-- StakeholderGrid Section -->
 <StakeholderGrid
-	generating
 	stakeholderType="team"
 	title="Our team."
 	subtitle="Your partners in innovation."
@@ -72,7 +71,6 @@
 />
 
 <StakeholderGrid
-	generating
 	stakeholderType="investor"
 	title="Backed by the best."
 	subtitle="Point Nine, TSIC and others"
@@ -94,8 +92,20 @@
 
 <!-- CTA Section -->
 <CallToAction
-	generating
-	title="Ready to collaborate?"
-	subtitle="Let's create something amazing"
-	description="Join the companies already leveraging our expertise to transform their digital presence and achieve their business goals."
+	title="Better fiber. Better digestion."
+	subtitle="Gut health starts here"
+	description="A daily fiber supplement designed to reduce bloating, support regularity, and help you feel lighter—naturally. Powered by a clinically studied blend of three essential fiber types."
+	imageSrc="/generated/image-a-professional-woman-in-her-home-kitchen.webp"
+	callsToAction={[
+		{
+			href: "/shop",
+			label: "Start your routine",
+			variant: "primary"
+		},
+		{
+			href: "/learn",
+			label: "Learn more",
+			variant: "secondary"
+		}
+	]}
 />
