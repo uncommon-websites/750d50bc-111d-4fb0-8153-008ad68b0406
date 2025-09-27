@@ -3,7 +3,6 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 
 	// Icons
-	import StakeholderGrid from "$lib/components/layout/StakeholderGrid.svelte";
 	import Story from "./Story.svelte";
 	import SecondaryHero from "$lib/components/layout/hero-sections/SecondaryHero.svelte";
 	import Culture from "$lib/components/layout/Culture.svelte";
@@ -11,16 +10,16 @@
 	// Constants
 	const values = [
 		{
-			title: "Science-driven",
-			description: "Every formula is backed by clinical research, not trends or gimmicks. We combine proven fiber types that work together for real digestive results."
+			title: "Clinical precision",
+			description: "Our tri-fiber blend combines soluble, insoluble, and prebiotic fibers in scientifically proven ratios. No guesswork, just results backed by digestive health research."
 		},
 		{
-			title: "Everyday simplicity",
-			description: "Gut health shouldn't be complicated. We create solutions that fit seamlessly into real life, making wellness accessible for busy schedules."
+			title: "Daily simplicity",
+			description: "Better gut health shouldn't disrupt your routine. One scoop daily delivers everything your digestive system needs, seamlessly fitting into busy lifestyles."
 		},
 		{
-			title: "Genuine care",
-			description: "Your wellbeing is our mission. We're here to support your journey to feeling lighter, more energized, and confidently in control of your health."
+			title: "Whole-person wellness",
+			description: "We believe gut health is the foundation of energy, focus, and confidence. Our mission extends beyond digestion to helping you feel your absolute best."
 		}
 	];
 </script>
@@ -43,68 +42,23 @@
 <!-- Our Culture Section -->
 <Culture {values} />
 
-<!-- StakeholderGrid Section -->
-<StakeholderGrid
-	stakeholderType="team"
-	title="Our team."
-	subtitle="Your partners in innovation."
-	stakeholders={[
-		{
-			name: "Alex Morgan",
-			position: "Founder & CEO",
-			bio: "Started the company with a vision to transform the industry through innovative solutions.",
-			image: "https://www.unc.mn/image-placeholder.svg"
-		},
-		{
-			name: "Jamie Chen",
-			position: "Chief Design Officer",
-			bio: "Award-winning designer with a passion for creating intuitive and beautiful experiences.",
-			image: "https://www.unc.mn/image-placeholder.svg"
-		},
-		{
-			name: "Taylor Wright",
-			position: "Head of Engineering",
-			bio: "Technology enthusiast focused on building scalable systems that make a difference.",
-			image: "https://www.unc.mn/image-placeholder.svg"
-		}
-	]}
-/>
-
-<StakeholderGrid
-	stakeholderType="investor"
-	title="Backed by the best."
-	subtitle="Point Nine, TSIC and others"
-	stakeholders={[
-		{
-			name: "Point Nine Capital",
-			image: "https://cdn.brandfetch.io/pointnine.com/w/400/h/400/logo?c=1id_elLz2Bd5Ej-dWo7"
-		},
-		{
-			name: "TSIC Ventures",
-			image: "https://cdn.brandfetch.io/tiny.vc/w/400/h/400/logo?c=1a2b3c4d5e"
-		},
-		{
-			name: "Sequoia Capital",
-			image: "https://cdn.brandfetch.io/sequoiacap.com/w/400/h/400/logo"
-		}
-	]}
-/>
+<!-- Team and investor sections removed as no real team members or confirmed investors available -->
 
 <!-- CTA Section -->
 <CallToAction
-	title="Better fiber. Better digestion."
-	subtitle="Gut health starts here"
-	description="A daily fiber supplement designed to reduce bloating, support regularity, and help you feel lighter—naturally. Powered by a clinically studied blend of three essential fiber types."
-	imageSrc="/generated/image-a-professional-woman-in-her-home-kitchen.webp"
+	title="Transform your gut health"
+	subtitle="Starting today"
+	description="Join thousands who've discovered what real digestive wellness feels like. Our science-backed tri-fiber blend works in just days to reduce bloating, improve regularity, and restore your natural energy."
+	imageSrc="/generated/image-bright-natural-light-fills-a-cozy-kitche.webp"
 	callsToAction={[
 		{
 			href: "/shop",
-			label: "Start your routine",
+			label: "Order now",
 			variant: "primary"
 		},
 		{
-			href: "/learn",
-			label: "Learn more",
+			href: "/results",
+			label: "See results",
 			variant: "secondary"
 		}
 	]}
