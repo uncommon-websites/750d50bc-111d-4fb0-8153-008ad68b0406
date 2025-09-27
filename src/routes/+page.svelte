@@ -10,12 +10,20 @@
 </script>
 
 <Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="https://www.unc.mn/image-placeholder.svg"
-	generating
+	title="Transform your gut health from the inside out"
+	subtitle="Three targeted fiber types that feed beneficial bacteria, reduce bloating, and restore your natural energy—so you can feel your best every day."
+	imageSrc="/generated/image-a-professional-woman-in-her-30s-energeti.webp"
+	centered={false}
 />
-<LogoScroller label="" generating />
+<LogoScroller 
+	label="Trusted by health-conscious companies"
+	logoUrls={[
+		'https://cdn.brandfetch.io/wholefoodsmarket.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/onepeloton.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/blueapron.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/headspace.com/w/400/h/400/logo'
+	]}
+/>
 
 <Summary
 	generating
